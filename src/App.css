@@ -1,19 +1,33 @@
 .App {
   text-align: center;
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
+img {
   height: 10vmin;
   pointer-events: none;
 }
 
-.App-header {
-  min-height: 100vh;
+h1 {
+  font-size: 3.5rem;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  box-shadow: 3px 3px 3px #ccc;
+  background: #fff;
+  padding: 10px;
 }
 
 button {
@@ -25,8 +39,4 @@ button {
   font-weight: bold;
   font-size: 2rem;
   margin: 20px;
-}
-ul {
-  list-style: none;
-  margin: 10 0;
 }

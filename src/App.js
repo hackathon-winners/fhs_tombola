@@ -10,7 +10,16 @@ const shuffleArray = (array) => {
   return array;
 };
 
-const amazonLinks = ["https://amzn.to/34QK5eB"];
+const amazonLinks = [
+  "https://amzn.to/34QK5eB",
+  "https://amzn.to/3eFQAFy",
+  "https://amzn.to/2zbDnDY",
+  "https://amzn.to/3eHpu0z",
+  "https://amzn.to/2wZYtoi",
+  "https://amzn.to/3cMjEJR",
+  "https://amzn.to/2RPPP2T",
+  "https://amzn.to/2RUYMYJ",
+];
 
 function App() {
   const [list, setList] = useState(amazonLinks);
@@ -29,9 +38,19 @@ function App() {
   };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={goToAmazon}>Auf Amazon etwas kaufen</button>
+      <header className="content">
+        <img src={logo} class="logo" alt="logo" />
+        <h1>Mit einem Klick was Gutes tun!</h1>
+        <p>
+          Business of Web des Studiengangs MMT-2017 experimentiert mit
+          Geschäftsmodellen im Web.
+        </p>
+        <p>Einfach Gutes tun:</p>
+        <ol style={{ textAlign: "left" }}>
+          <li>Entdecke ein neues Produkt</li>
+          <li>Jeder Kauf unterstützt ein Projektteam.</li>
+        </ol>
+        <button onClick={goToAmazon}>Amazon entdecken</button>
       </header>
     </div>
   );
